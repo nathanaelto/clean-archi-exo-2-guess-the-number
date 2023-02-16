@@ -1,9 +1,13 @@
 package org.esgi.al.ex2;
 
+import org.esgi.al.ex2.core.game.GuessTheNumberGenerator;
+
 import java.util.Random;
 import java.util.Scanner;
 
-public class GuessTheNumberGame {
+public class App {
+    final static int MAX_NUMBER = 100;
+
     public static void main(String[] args) {
         Random generator = new Random();
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +22,7 @@ public class GuessTheNumberGame {
 
         while(continuePlaying) {
             System.out.println("Guess the number (between 1 and 100)!");
-            int number = generator.nextInt(100) + 1;
+            int number = GuessTheNumberGenerator.create(MAX_NUMBER).generateNumber();
             System.out.println("debug : the expected number is " + number);
 
             while (number != userGuess && attempts < maxAttempts) {

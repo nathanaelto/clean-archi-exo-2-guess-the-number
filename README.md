@@ -1,5 +1,11 @@
 # Guess the number
 
+# WARNING:
+
+Le travail a été fait en pair entre :
+* Nathanaël TO
+* Ahmedine BENABDELOUHAB
+
 ## Imperative style
 
 The imperative paradigm is defined by a direct flow of control. This means you write your instructions line after line to tell step by step the computer what to do.
